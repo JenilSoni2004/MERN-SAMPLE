@@ -6,7 +6,7 @@ const cors=require("cors")
 const app = express();
 const port = 8000;
 
-connectmongodb('mongodb://localhost:27017/test')
+connectmongodb('mongodb+srv://Jenilsoni:Jenil%401137@cluster0.mmmptjl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>console.log("mongodb connected"));
 
 app.use(express.urlencoded({ extended: false }));
